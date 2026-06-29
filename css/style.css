@@ -1,0 +1,59 @@
+.loadingPage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ClickAnim {
+
+    animation: ClickBtnAnim infinite 1.5s;
+}
+
+@keyframes ClickBtnAnim {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.WAIAnim {
+    animation: WAIAnim 1.5s;
+}
+
+
+@keyframes WAIAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.LoadingPageSecAnim {
+    animation: LoadingPAgeAnim 1.5s;
+}
+
+@keyframes LoadingPAgeAnim {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
