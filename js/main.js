@@ -6,10 +6,16 @@ let MidLodingDiv = document.getElementById('MidLodingDiv');
 let LoadingTextP = document.getElementById("LoadingTextP");
 let ClickBtnLoadingPAge = document.getElementById('ClickBtnLoadingPAge');
 let UserInfo = document.getElementById('UserInfo');
-
  const tg = window.Telegram.WebApp;
  const user = tg.initDataUnsafe?.user;
- if(user){
+
+
+
+
+
+
+
+if(user){
 
      UserInfo.innerText = `Telegram id : ${user.id} , First Name : ${user.first_name} , user name : ${user.username} and premium chek : ${user.is_premium}`;
  }
@@ -76,44 +82,44 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
 
-        }, 1000)
-        setTimeout(() => {
-
-
-            for (i = 0; i <= 68; i++) {
-                MidLodingDiv.style.width = `${i}%`
-                // console.log(i);
-
-            };
-
-
-        }, 2500)
-        setTimeout(() => {
-
-
-            for (i = 0; i <= 100; i++) {
-                MidLodingDiv.style.width = `${i}%`
-                // console.log(i);
-
-            };
-
-
-        }, 3000)
-        setTimeout(() => {
-            MaxLodingDiv.style.display = 'none';
             setTimeout(() => {
-                ClickBtnLoadingPAge.style.display = 'flex';
-                document.addEventListener('click', () => {
-                    console.log('Click');
-                    // alert('Clicked with user')
-                    LoadingPage.classList = 'LoadingPageSecAnim';
+    
+    
+                for (i = 0; i <= 68; i++) {
+                    MidLodingDiv.style.width = `${i}%`
+                    // console.log(i);
+    
+                };
+    
+    
+                setTimeout(() => {
+        
+        
+                    for (i = 0; i <= 100; i++) {
+                        MidLodingDiv.style.width = `${i}%`
+                        // console.log(i);
+        
+                    };
+        
+        
                     setTimeout(() => {
-                        LoadingPage.style.display = 'none';
-                    }, 1400)
-                })
-            }, 500)
-        }, 5000)
+                        MaxLodingDiv.style.display = 'none';
+                        setTimeout(() => {
+                            ClickBtnLoadingPAge.style.display = 'flex';
+                            document.addEventListener('click', () => {
+                                console.log('Click');
+                                // alert('Clicked with user')
+                                LoadingPage.classList = 'LoadingPageSecAnim';
+                                setTimeout(() => {
+                                    LoadingPage.style.display = 'none';
+                                }, 1400)
+                            })
+                        }, 500)
+                    }, 2000)
+                }, 500)
+            }, 1500)
+        }, 1000)
 
-    }, 1000)
+    }, 3000)
 })
 
