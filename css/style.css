@@ -11,6 +11,31 @@
 .typed{
     font-size: clamp(14px , 2.5vw , 3.5rem);
 }
+.Question{
+    /* text-shadow: 0.2rem -0.2rem 0.5rem white; */
+    animation: QuestionAnim infinite 4.5s;
+}
+@keyframes QuestionAnim{
+    0%{
+        text-shadow: 0rem -0.1rem 0.7rem white;
+
+    }
+    25%{
+        text-shadow: 0.1rem -0.2rem 0.7rem white;
+
+    }
+    50%{
+        text-shadow: 0rem -0.25rem 0.7rem white;
+
+    }
+    75%{
+        text-shadow: -0.1rem -0.2rem 0.7rem white;
+    }
+    100%{
+        text-shadow: 0rem -0.1rem 0.7rem white;
+
+    }
+}
 .ClickAnim {
 
     animation: ClickBtnAnim infinite 1.5s;
