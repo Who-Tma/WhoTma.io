@@ -6,8 +6,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-size: cover;
 }
-
+.typed{
+    font-size: clamp(14px , 2.5vw , 3.5rem);
+}
 .ClickAnim {
 
     animation: ClickBtnAnim infinite 1.5s;
