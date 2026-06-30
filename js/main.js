@@ -7,19 +7,12 @@ let LoadingTextP = document.getElementById("LoadingTextP");
 let ClickBtnLoadingPAge = document.getElementById('ClickBtnLoadingPAge');
 let UserInfo = document.getElementById('UserInfo');
 
-// const tg = window.Telegram.WebApp;
-// const user = tg.initDataUnsafe?.user;
+ const tg = window.Telegram.WebApp;
+ const user = tg.initDataUnsafe?.user;
+ if(user){
 
-
-
-
-
-
-
-// if(user){
-
-//     UserInfo.innerText = `Telegram id : ${user.id} , First Name : ${user.first_name} , user name : ${user.username} and premium chek : ${user.is_premium}`;
-// }
+     UserInfo.innerText = `Telegram id : ${user.id} , First Name : ${user.first_name} , user name : ${user.username} and premium chek : ${user.is_premium}`;
+ }
 
 
 
