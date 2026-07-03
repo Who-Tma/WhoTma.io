@@ -23,15 +23,15 @@ adsShowing.addEventListener('click',()=>{
     console.log('OkkkkAds');
 })
 
-// const tg = window.Telegram.WebApp;
-// const user = tg.initDataUnsafe?.user;
-// const a = user.id;
+ const tg = window.Telegram.WebApp;
+ const user = tg.initDataUnsafe?.user;
+ //const a = user.id;
 
 
 
 
 
-let user = {id:99998999,first_name:'aminAzizi2',is_premium:true,username:'@test2'};
+//let user = {id:99998999,first_name:'aminAzizi2',is_premium:true,username:'@test2'};
 const TelId = user.id;
 document.addEventListener('DOMContentLoaded', () => {
     async function UserFound() {
