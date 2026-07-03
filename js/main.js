@@ -28,9 +28,6 @@ adsShowing.addEventListener('click',()=>{
  //const a = user.id;
 
 
-
-
-
 //let user = {id:99998999,first_name:'aminAzizi2',is_premium:true,username:'@test2'};
 const TelId = user.id;
 document.addEventListener('DOMContentLoaded', () => {
