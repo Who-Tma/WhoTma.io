@@ -308,12 +308,15 @@
     justify-content: start;
 
     width: 80%;
-    height: 7rem;
+    /* height: 10rem; */
     border-radius: 0 0.8rem 0.8rem 0.8rem;
     position: fixed;
     bottom: 0;
     margin-bottom: 2.5rem;
-    background: #ffff;
+    background: linear-gradient(to bottom , gray , silver);
+    border-color: gray;
+    border-style: double;
+    border-width: 0.3rem;
 }
 
 #TapToOpen {
