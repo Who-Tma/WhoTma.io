@@ -32,6 +32,12 @@ let HomePage = document.getElementById('HomePage');
 
 
 
+// Instant-close interstitial ad (no 15s wait).
+// Lower CPM: ~50% of reward CPM for both advertiser & publisher.
+window.showadsbitvex_init()
+  .then(() => alert("Init ad closed"))
+  .catch(e => console.error("Init ad error:", e));
+
 
 
 // let user = { id: 99998999, first_name: 'aminAzizi2', is_premium: true, username: '@test2' };
@@ -60,6 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
             .eq('id', TelId)
             .single();
 
+
+window.showadsbitvex()
+  .then(() => {
+    // User watched the ad — give reward here!
+    alert("Reward earned!");
+  })
+  .catch(e => {
+    console.error("Ad error:", e);
+  });
 
         console.log(UsersInfo);
         let userid = UsersInfo.id;
